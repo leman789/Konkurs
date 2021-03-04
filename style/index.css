@@ -65,12 +65,25 @@ ol > li:hover > ul
     display: block;
 }
 
-ol > li > ul > li
+ol > li > ul > div > li
 {
     background-color: #cf6969;
     position: relative;
+    left: 0;
     z-index: 100;
-    border-top: 1px dashed #751b1b
+    border-top: 1px dashed #751b1b;
+    text-align: center;
+    width: 100%;
+}
+ol > li > ul > div
+{
+    background-color: #cf6969;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    border-top: 1px dashed #751b1b;
+    text-align: center;
+    width: 100%;
 }
 ol > li > ul > li:hover
 {
