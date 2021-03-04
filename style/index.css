@@ -1,0 +1,79 @@
+body{
+    margin:0;
+}
+.wrapper
+{
+    width: 100%;
+}
+
+.header
+{
+    width: 100%;
+    padding: 40px 0;
+    background-color: blue;
+}
+
+.nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c34f5f;
+    border-top: 1px solid #752b1b;
+    border-bottom: 1px solid #752b1b;
+    height: 40px;
+    position: sticky;
+            top: 0;
+            left: 0;
+}
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol > li
+{
+    float: left;
+    height: 40px;
+    padding: 0 5px;
+    border-right: 1px dashed black ;
+}
+
+ol > li:first-child
+{
+    /* potem cos dopisze*/
+}
+ol > li:hover
+{
+    background-color: blueviolet;
+}
+
+ol > li > ul
+{
+   list-style-type:none ; 
+   padding: 0;
+   margin: 0;
+   height: 40px;
+   display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color: #cf6969;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #751b1b
+}
+ol > li > ul > li:hover
+{
+    background-color: #eb5050;
+
+}
