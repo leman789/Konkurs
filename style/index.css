@@ -90,3 +90,13 @@ ol > li > ul > li:hover
     background-color: #eb5050;
 
 }
+
+.obraz{
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+}
+.content{
+    margin: 0 auto;
+ width: 80%;
+}
