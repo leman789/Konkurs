@@ -1,5 +1,6 @@
 body{
     margin:0;
+    background-color: #FAFAFA;
 }
 .wrapper
 {
@@ -10,15 +11,14 @@ body{
 {
     width: 100%;
     padding: 40px 0;
-    background-color: blue;
+    background-color: #FAFAFA;
 }
 
 .nav{
     width: 100%;
-    padding: 10px 0;
-    background-color: #c34f5f;
-    border-top: 1px solid #752b1b;
-    border-bottom: 1px solid #752b1b;
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
     height: 40px;
     position: sticky;
             top: 0;
@@ -27,19 +27,19 @@ body{
 ol{
     padding: 0;
     margin: 0;
+    height: 100%;
     list-style-type: none;
     font-size: 18px;
-    height: 35px;
-    line-height: 200%;
     display: inline-block;
 }
 
 ol > li
 {
+    padding: 0 10px;
+    height: 100%;
+    z-index: 200;
     float: left;
-    height: 40px;
     padding: 0 5px;
-    border-right: 1px dashed black ;
 }
 
 ol > li:first-child
@@ -48,7 +48,7 @@ ol > li:first-child
 }
 ol > li:hover
 {
-    background-color: blueviolet;
+    border-bottom: 2px solid black;
 }
 
 ol > li > ul
@@ -67,21 +67,22 @@ ol > li:hover > ul
 
 ol > li > ul > div > li
 {
-    background-color: #cf6969;
+    background-color: #FFFFFF;
     position: relative;
     left: 0;
     z-index: 100;
-    border-top: 1px dashed #751b1b;
     text-align: center;
     width: 100%;
 }
 ol > li > ul > div
 {
     background-color: #cf6969;
+    border-top: 0.5px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
     position: absolute;
+    margin-top: 20px;
     left: 0;
     z-index: 100;
-    border-top: 1px dashed #751b1b;
     text-align: center;
     width: 100%;
 }
@@ -92,11 +93,13 @@ ol > li > ul > li:hover
 }
 
 .obraz{
+    background-color: #FAFAFA;
     margin: 30px auto;
     width: 80%;
     text-align: center;
 }
 .content{
+    background-color: #FAFAFA;
     margin: 0 auto;
  width: 80%;
 }
