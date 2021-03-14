@@ -1,3 +1,10 @@
+@font-face{
+     font-family: custom;
+     src: url(fonty/DejaVuSans.ttf);
+}
+html{
+    font-family: custom;
+}
 body{
     margin:0;
     background-color: #FAFAFA;
