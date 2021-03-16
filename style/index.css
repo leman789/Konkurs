@@ -31,70 +31,54 @@ body{
             top: 0;
             left: 0;
 }
-ol{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    list-style-type: none;
-    font-size: 18px;
-    display: inline-block;
-}
 
-ol > li
-{
-    height: 100%;
-    z-index: 200;
+.nav > div{
     float: left;
-    padding: 0 5px;
-}
-ol > li:hover
-{
-    border-bottom: 2px solid black;
+    height: 40px;
 }
 
-ol > li > ul
-{
-   list-style-type:none ; 
-   padding: 0;
-   margin: 0;
-   height: 40px;
-   display: none;
+.ElWysuwany{
+    position: relative;
+    background-color: blueviolet;
+    width: 15%;
 }
 
-ol > li:hover > ul
-{
+.Tytul{
+    position: relative;
+    width: 85%;
+    text-align: center;
+}
+
+.Tytul > a{
+    margin-left: -17%;
+}
+
+div > li > ul > li, div > li{
+    list-style-type: none;
+}
+
+div > li > ul {
+    background-color: brown;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+div > li > ul > li{
+    width: 20%;
+    margin-top: 20px;
+    height: 30px;
+    text-align: center;
+    background-color: brown;
+    display: block;
+    /* background-color: blue; */
+    float: left;
+}
+
+div:hover > li > ul {
     display: block;
 }
-
-ol > li > ul > div > li
-{
-    position: relative;
-    left: 0;
-    z-index: 100;
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-}
-ol > li > ul > div
-{
-    left: 0;
-    background-color: #cf6969;
-    border-top: 0.5px solid #DDDDDD;
-    border-bottom: 1px solid #DDDDDD;
-    position: absolute;
-    margin-top: 13px;
-    height: 50px;
-    z-index: 100;
-    text-align: center;
-    width: 20%;
-    float: left;
-}
-ol > li > ul > div:hover
-{
-    background-color: #eb5050;
-
-}
-
 .obraz{
     background-color: #FAFAFA;
     margin: 30px auto;
@@ -104,12 +88,9 @@ ol > li > ul > div:hover
 .content{
     background-color: #FAFAFA;
     margin: 0 auto;
- width: 80%;
+    width: 80%;
 }
 a{
     text-decoration: none;
     color: black;
-}
-#Tytul{
-    margin-left: 67vh;
 }
