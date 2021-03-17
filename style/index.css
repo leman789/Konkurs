@@ -33,13 +33,15 @@ body{
 }
 
 .nav > div{
+    margin: 0;
+    padding: 0;
     float: left;
-    height: 40px;
 }
 
 .ElWysuwany{
     position: relative;
     background-color: blueviolet;
+    height: 100%;
     width: 15%;
 }
 
@@ -68,7 +70,7 @@ div > li > ul {
 div > li > ul > li{
     width: 20%;
     margin-top: 20px;
-    height: 30px;
+    height: 40px;
     text-align: center;
     background-color: brown;
     display: block;
