@@ -6,6 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/index.css" rel="stylesheet" type="text/css">
     <title>Fundusze EOG i norweskie</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Programy','link', 'Wkład Funduszy Norweskich'],//prosze nie przypierdalajcie się do literówek :)
+          ['Rozwój Przedsiębiorczości i Innowacji', 'index.html',85],
+          ['Rozwój Lokalny',  'podstrony/RozwojSpoleczny.html',   100],
+          ['Badania Naukowe', 'podstrony/BadaniaNaukowe.html',  110],
+          ['Edukacja',  'index.html', 20],
+          ['Środowisko, Energia i Zmiany Klimatu',  'podstrony/OchronaSrodowiska.html', 140],
+          ['Kultura', 'podstrony/Kultura.html', 75],
+          ['Zdrowie', 'index.html', 20],
+          ['Sprawiedliowść',  'index.html', 58.2],
+          ['Sprawy Wewnętrzne', 'index.html', 20],
+          ['Fundusz Współpracy Dwustronnej',  'index.html', 16.2],
+          ['Pomoc Techniczna',  'index.html', 12.1]
+        ]);
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 2]);
+
+        var options = {
+          title: 'Podział pieniędzy z III etapu funduszy Norweskich Podany w milionach Euro',
+          pieHole: 0.3,
+        };
+
+        var chart = new google.visualization.PieChart( 
+        document.getElementById('chart_div'));
+        chart.draw(view, options);
+
+        var selectHandler = function(e){
+        window.location = data.getValue(chart.getSelection()[0]['row'], 1 );
+        }
+
+        google.visualization.events.addListener(chart, 'select', selectHandler);
+      }
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -55,7 +93,7 @@
                 Głównym celem Funduszy norweskich i Funduszy EOG jest przyczynianie się do zmniejszania różnic ekonomicznych i społecznych w obrębie EOG oraz wzmacnianie stosunków dwustronnych pomiędzy państwami-darczyńcami a państwem-beneficjentem.
             </p>
             </div>
-            <img src="obrazki_pogladowe/Screenshot_14.png">
+            <div id="chart_div" style="width: 1200px; height: 800px;"></div>
         </div>
         </div>
 </body>
