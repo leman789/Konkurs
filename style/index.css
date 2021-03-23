@@ -28,7 +28,7 @@ body{
 .header
 {
     width: 50%;
-    height: 110px;
+    height: 50px;
     background-color: #00CECB;
 }
 
@@ -53,11 +53,10 @@ body{
 .ElWysuwany{
     position: relative;
     width: 100%;
-    margin-top:110px;
 }
 .ElUkryty{
     position: fixed;
-    top: 111px;
+    top: 75px;
     z-index: 99;
     width: 100%;
     background-color: aliceblue;
@@ -70,7 +69,7 @@ body{
 }
 .Tytul{
     width: 50%;
-    height: 110px;
+    height: 50px;
     padding: 40px 0;
     background-color: #00CECB;
     text-align: right;
