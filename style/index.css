@@ -57,6 +57,7 @@ body{
     background-color: aliceblue;
 }
 .ElUkryty > ul >li{
+    text-align: center;
     z-index: 1;
     width: 20%;
     float: left;
