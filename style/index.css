@@ -90,12 +90,13 @@ div:hover > li > ul {
 .content{
     background-color: #FAFAFA;
     margin: 0 auto;
-    width: 60%;
+    width: 50%;
 }
 a{
     text-decoration: none;
     color: black;
 }
 .Para{
-    border-top: 1px solid black;
+    width: 75%;
+    border-top: 1px solid #dcdcdc;
 }
