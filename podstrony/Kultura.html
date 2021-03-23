@@ -8,26 +8,25 @@
     <title>Fundusze EOG i norweskie</title>
 </head>
 <body>
-<div class="wrapper">
-    <div class="header"> <div class="logo">tutaj bedzie logo</div> </div>
     <div class="nav">
         <div class="ElWysuwany">
-            <li>Tutaj będzie szcałka czy cóś
-                <ul>
-                    <li><a href="podstrony/xd.html">Ochrona Środowiska i energia odnawialna</a></li>
-                    <li><a href="podstrony/zalozyciele.html">Rozwój społeczy i regionalny</a></li>
-                    <li><a href="#">Kultura</a></li>
-                    <li><a href="#">Badania naukowe i stypendia</a></li>
-                    <li><a href="#">Wzmacniania społeczeństwa obywatelskiego </a></li>
-                </ul>
-            </li>
+               <img src="../obrazki_pogladowe/szczalka.png" alt="szalka" width="50px" onclick="pokaz()">
+               <p id="wynik"></p>
         </div>
-        <div class="Tytul"><a href="index.html">Fundusze EOG i norweskie</a></div>
-            <li id="Tytul"></li>
+        <div class="Tytul"><a href="../index.html">Fundusze EOG i norweskie</a></div>
             <div style="clear: both;"></div>
-        </ol>
-        
     </div>
+    <div class="ElUkryty">
+        <ul>
+            <li><a href="OchronaSrodowiska.html">Ochrona Środowiska i energia odnawialna</a></li>
+            <li><a href="RozwojSpoleczny.html">Rozwój społeczy i regionalny</a></li>
+            <li><a href="Kultura.html">Kultura</a></li>
+            <li><a href="BadaniaNaukowe.html">Badania naukowe i stypendia</a></li>
+            <li><a href="SpoleczenstwaObywatelskie.html">Wzmacniania społeczeństwa obywatelskiego </a></li>
+        </ul>
+       </div>
+<div class="wrapper">
+    <div class="header"> <div class="logo">tutaj bedzie logo</div> </div>
     <div class="obraz">
         <img src="obrazki_pogladowe/372668-blackangel_1920x1080.jpg" width="1000px" height="400px">
     </div>
@@ -91,4 +90,19 @@
         </ol>
         </div>
     </div>
+</div>
 </body>
+<script>
+    var x=0;
+    function pokaz(){
+        x++;
+        if(x==1){
+            document.getElementById("wynik").innerHTML="<style>.ElUkryty{z-index: 101;}</style>";
+        }
+        else if(x>1){
+            document.getElementById("wynik").innerHTML="<style>.ElUkryty{z-index: 50;}</style>";
+            x=0;
+        }
+    }
+</script>
+</html>
