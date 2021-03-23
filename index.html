@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/index.css" rel="stylesheet" type="text/css">
     <title>Fundusze EOG i norweskie</title>
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -46,26 +47,25 @@
     </script>
 </head>
 <body>
+    <div class="nav">
+        <div class="ElWysuwany">
+               <img src="obrazki_pogladowe/szczalka.png" alt="szalka" width="50px" onclick="pokaz()">
+               <p id="wynik"></p>
+        </div>
+        <div class="Tytul"><a href="index.html">Fundusze EOG i norweskie</a></div>
+            <div style="clear: both;"></div>
+    </div>
+    <div class="ElUkryty">
+        <ul>
+            <li><a href="podstrony/OchronaSrodowiska.html">Ochrona Środowiska i energia odnawialna</a></li>
+            <li><a href="podstrony/RozwojSpoleczny.html">Rozwój społeczy i regionalny</a></li>
+            <li><a href="podstrony/Kultura.html">Kultura</a></li>
+            <li><a href="podstrony/BadaniaNaukowe.html">Badania naukowe i stypendia</a></li>
+            <li><a href="podstrony/SpoleczenstwaObywatelskie.html">Wzmacniania społeczeństwa obywatelskiego </a></li>
+        </ul>
+       </div>
     <div class="wrapper">
         <div class="header"> <div class="logo">tutaj bedzie logo</div> </div>
-        <div class="nav">
-            <div class="ElWysuwany">
-                <li>Tutaj będzie szcałka czy cóś
-                    <ul>
-                        <li><a href="podstrony/xd.html">Ochrona Środowiska i energia odnawialna</a></li>
-                        <li><a href="podstrony/zalozyciele.html">Rozwój społeczy i regionalny</a></li>
-                        <li><a href="#">Kultura</a></li>
-                        <li><a href="#">Badania naukowe i stypendia</a></li>
-                        <li><a href="#">Wzmacniania społeczeństwa obywatelskiego </a></li>
-                    </ul>
-                </li>
-            </div>
-            <div class="Tytul"><a href="index.html">Fundusze EOG i norweskie</a></div>
-                <li id="Tytul"></li>
-                <div style="clear: both;"></div>
-            </ol>
-            
-        </div>
         <div class="obraz">
             <img src="obrazki_pogladowe/372668-blackangel_1920x1080.jpg" width="1000px" height="400px">
         </div>
@@ -91,9 +91,21 @@
             <p>
                 Głównym celem Funduszy norweskich i Funduszy EOG jest przyczynianie się do zmniejszania różnic ekonomicznych i społecznych w obrębie EOG oraz wzmacnianie stosunków dwustronnych pomiędzy państwami-darczyńcami a państwem-beneficjentem.
             </p>
-            
             <div id="chart_div" style="width: 1200px; height: 800px;"></div>
         </div>
-        </div>
+    </div>
 </body>
+<script>
+    var x=0;
+    function pokaz(){
+        x++;
+        if(x==1){
+            document.getElementById("wynik").innerHTML="<style>.ElUkryty{z-index: 101;}</style>";
+        }
+        else if(x>1){
+            document.getElementById("wynik").innerHTML="<style>.ElUkryty{z-index: 50;}</style>";
+            x=0;
+        }
+    }
+</script>
 </html>
