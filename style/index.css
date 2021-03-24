@@ -11,6 +11,7 @@
 }
 html{
    font-family: custom;
+   font-size: 100%;
 }
 body{
    margin:0;
@@ -55,16 +56,21 @@ body{
 }
 .ElUkryty{
    position: fixed;
+   height: 40px;
    top: 75px;
    z-index: 99;
    width: 100%;
-   background-color: aliceblue;
 }
-.ElUkryty > ul >li{
+.ElUkryty > a > div{
+   background-color: #ccccbb;
    text-align: center;
-   z-index: 1;
-   width: 20%;
+   padding: 1%;
+   height: 40px;
+   width: 18%;
    float: left;
+}
+.ElUkryty > a > div:hover{
+   background-color: #b2b2a3;
 }
 .Tytul{
    width: 50%;
@@ -83,6 +89,7 @@ body{
    text-align: center;
 }
 .content{
+   padding: 50px;
    background-color: #FFFFEA;
    margin: 0 auto;
    width: 50%;
@@ -95,4 +102,8 @@ a{
    width: 75%;
    border-top: 1px solid #dcdcdc;
 }
+h1,h2,h3{
+   text-align: center;
+}
 /*Pls nie wnikajcie w to co odpierdalam ok XDDD*/
+/* Leman: Ok */
