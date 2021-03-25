@@ -23,7 +23,7 @@ body{
    position: absolute;
    width: 100%;
    z-index: 100;
-   background-color: #D8D8D8;
+   background-color: #f0f2f5;
 }
 
 
@@ -95,11 +95,14 @@ body{
    transform: scale(1.2);
 }
 .content{
-   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-   padding: 50px;
-   background-color: #fff;
-   margin: 0 auto;
-   width: 50%;
+   text-align: justify;
+   border-radius: 30px;
+   margin: 30px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+   padding: 5px 40px;
+    background-color: #fff;
+   /* background-color: #DBDBDB; */
+   width: 1000px;
 }
 a{
    text-decoration: none;
