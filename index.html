@@ -14,34 +14,31 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Programy','link', 'Wkład Funduszy Norweskich'],//prosze nie przypierdalajcie się do literówek :)
-          ['Rozwój Przedsiębiorczości i Innowacji', 'index.html',85],
-          ['Rozwój Lokalny',  'podstrony/RozwojSpoleczny.html',   100],
-          ['Badania Naukowe', 'podstrony/BadaniaNaukowe.html',  110],
-          ['Edukacja',  'index.html', 20],
-          ['Środowisko, Energia i Zmiany Klimatu',  'podstrony/OchronaSrodowiska.html', 140],
-          ['Kultura', 'podstrony/Kultura.html', 75],
-          ['Zdrowie', 'index.html', 20],
-          ['Sprawiedliowść',  'index.html', 58.2],
-          ['Sprawy Wewnętrzne', 'index.html', 20],
-          ['Fundusz Współpracy Dwustronnej',  'index.html', 16.2],
-          ['Pomoc Techniczna',  'index.html', 12.1]
+          ['Rozwój społeczny i regionalny',  'podstrony/RozwojSpoleczny.html',   85.84],
+          ['Ochrona środowiska i energa odnawialna',  'podstrony/OchronaSrodowiska.html', 180.23],
+          ['Kultura', 'podstrony/Kultura.html', 81.2],
+          ['Wzmacnianie społeczeństwa obywatelskiego', 'podstrony/SpoleczenstwaObywatelskie.html', 37],
+          ['Innowacje w zakresie zielonych technologii', 'index.html', 20],
+          ['Godna praca i dialog trójstronny', 'index.html', 3.11],
+          ['Schengen i sprawy wewnętrzne', 'index.html', 40.63],
+          ['Badania naukowe i stypendia', 'podstrony/BadaniaNaukowe.html', 78.18],
         ]);
         var view = new google.visualization.DataView(data);
         view.setColumns([0, 2]);
-
+    
         var options = {
-          title: 'Podział pieniędzy z III etapu funduszy Norweskich Podany w milionach Euro',
-          pieHole: 0.3,
+          title: 'Alokacja na obszary tematyczne',
+          pieHole: 0.5,
         };
-
+    
         var chart = new google.visualization.PieChart( 
         document.getElementById('chart_div'));
         chart.draw(view, options);
-
+    
         var selectHandler = function(e){
         window.location = data.getValue(chart.getSelection()[0]['row'], 1 );
         }
-
+    
         google.visualization.events.addListener(chart, 'select', selectHandler);
       }
     </script>
@@ -97,7 +94,7 @@
         </div>
 
         <div class="content">
-            <div id="chart_div" style="height: 800px;"></div>
+            <div id="chart_div" style="height: 900px;"></div>
         </div>
         </div>
     </div>
