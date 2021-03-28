@@ -29,10 +29,14 @@
         var options = {
           title: 'Alokacja na obszary tematyczne',
           pieHole: 0.5,
+          titleTextStyle: {
+              fontSize:32,
+          }
         };
     
         var chart = new google.visualization.PieChart( 
         document.getElementById('chart_div'));
+
         chart.draw(view, options);
     
         var selectHandler = function(e){
