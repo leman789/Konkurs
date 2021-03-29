@@ -40,6 +40,10 @@ body{
    top: 0;
    left: 0;
 }
+
+#tytul{
+      margin-top: -15px;
+}
 #Wysun{
    z-index: 102;
    position: fixed;
